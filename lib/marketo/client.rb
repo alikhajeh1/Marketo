@@ -11,7 +11,7 @@ module Marketo
     def self.new_marketo_client(access_key, secret_key)
       @client = Savon::Client.new do
         http.headers["Pragma"] = "no-cache"
-        wsdl.endpoint = "https://na-l.marketo.com/soap/mktows/1_6"
+        wsdl.endpoint = "https://na-n.marketo.com/soap/mktows/1_6"
         wsdl.document = "http://app.marketo.com/soap/mktows/1_4?WSDL"
       end
 
